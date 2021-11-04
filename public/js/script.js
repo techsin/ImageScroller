@@ -123,7 +123,6 @@ class FetchController {
             }
 
             if (state.images.length < state.maxImages && page < totalPages) {
-                console.log('hi');
                 await fetchNow();
             }
 
