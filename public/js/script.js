@@ -77,6 +77,7 @@ class SearchController {
         state.query = event.target.value;
         await state.controllers.fetch.fetchImages();
         state.controllers.results.renderImages();
+        state.controllers.nav.update();
     }
 
     inputeHanlderWrapper(event) {
