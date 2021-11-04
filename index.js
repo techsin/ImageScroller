@@ -1,6 +1,6 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000
 
 app.use(express.static('public'));
 app.set('view engine', 'pug');
@@ -10,5 +10,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Open this url in a browser: http://localhost:${port}`)
+  console.log(`Open this url in a browser: http://localhost:${port}`);
 })
