@@ -1,0 +1,37 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Vanilla Images Browser
+    link(href='https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='/css/styles.css')
+    script(src='/js/script.js', async)
+body
+    header
+        h1 IMAGE BROWSER
+        input#search(placeholder='type here to search', autocomplete='off', tabindex='0', autofocus)
+    
+    section#results
+        .info
+            .current 10
+            span  0f 
+            .total 50
+        .navigation
+            .left
+                img(src="images/left_arrow.svg")
+            .right
+                img(src="images/right_arrow.svg")
+        .images
+            .img
+            .img
+            .img
+            .img
+            .img
+            .img
+            .img
+            .img
+            .img
+            .img
+        #modal.hide
+            img.big
