@@ -1,3 +1,5 @@
+const clientID = '3SoE-TTRJ783ZW5_pY_gEnmf1nohc3N5I2jUuPqsHM8';
+
 function domReady(fn) {
     if (document.readyState !== 'loading') {
         fn();
@@ -104,7 +106,7 @@ class FetchController {
             // console.log(page, totalPages, state.maxImages, state.images.length);
             try {
                 page++;
-                response = await fetch(`https://api.unsplash.com/search/photos?page=${page}&query=${state.query}&client_id=3SoE-TTRJ783ZW5_pY_gEnmf1nohc3N5I2jUuPqsHM8`);
+                response = await fetch(`https://api.unsplash.com/search/photos?page=${page}&query=${state.query}&client_id=${clientID}`);
                 results = await response.json();
                 parsed = results.results || [];
 
