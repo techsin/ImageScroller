@@ -1,7 +1,7 @@
 {
-  "name": "coding_challenge",
+  "name": "images_browser",
   "version": "1.0.0",
-  "description": "Forbes coding challenge - Vanilla Images Browser",
+  "description": "Vanilla Images Browser",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
