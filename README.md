@@ -1,3 +1,3 @@
-# ImageScroller
+# ImagesScroller
 
 https://imagesbrowser.herokuapp.com/
